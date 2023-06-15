@@ -1,4 +1,14 @@
+import { BrowserRouter as useNavigate } from 'react-router-dom';
+
 function Navbar() {
+  const navigate = useNavigate();
+
+  const handleButtonClickLogin = () => {
+    navigate('/Login');
+  };
+  const handleButtonClickRegister = () => {
+    navigate('/Register');
+  };
   return (
   <nav className="navbar border-bottom border-bottom-dark">
     <div className="container">
@@ -10,6 +20,10 @@ function Navbar() {
         </div>
         <div className="col-xl-1 col-sm-1 col-lg-1">
           <button className="btn me-2" id="register" type="button">Registrarse</button>
+          <button className="btn btn-outline-success me-2" id="login" onClick={handleButtonClickLogin} type="button">Ingresar</button>
+        </div>
+        <div className="col-xl-1 col-sm-1 col-lg-1">
+          <button className="btn btn-outline-danger me-2" id="register" onClick={handleButtonClickRegister} type="button">Registrarse</button>
         </div>
       </div>
   </nav>
