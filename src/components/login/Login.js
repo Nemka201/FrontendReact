@@ -1,4 +1,4 @@
-function Header() {
+function Login() {
   return (
     <header>
       
@@ -6,4 +6,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Login;
