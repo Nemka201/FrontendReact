@@ -1,3 +1,6 @@
+:root {
+    --color-primario: #ff0000;
+}
 header{
     background-color: black;
 }
