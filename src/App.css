@@ -1,7 +1,36 @@
 :root {
-    --color-primario: #ff0000;
+    --color-rosa: #E966A0;
+    --color-negro: #2B2730;
+    --color-violeta: #6554AF;
+    --color-violetaC: #9575DE;
+
 }
-header{
-    background-color: black;
+footer{
+    background-color: var(--color-rosa);
+    color: whitesmoke;
+    text-align: center;
+}
+
+.navbar{
+    background-color: var(--color-rosa);
+    color: var(--color-negro);
+}
+#login{
+    background-color: var(--color-violetaC) ;
+    color: whitesmoke;
+    border-radius: 20px;
+    margin-left: 355px;
+}
+#register{
+    background-color: var(--color-violetaC) ;
+    color: whitesmoke;
+    border-radius: 20px;
+    margin-left: 280px;
+
+}
+.Title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:whitesmoke;
+    text-align: center;
 }
 
