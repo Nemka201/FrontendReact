@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <div className="App">
-     
-    </div>
+    <footer>
+      
+    </footer>
   );
   
 }
