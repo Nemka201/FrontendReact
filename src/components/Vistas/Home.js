@@ -9,7 +9,6 @@ function Home() {
       <Content/>
       <Footer/>
     </div>
-
   );
 }
 

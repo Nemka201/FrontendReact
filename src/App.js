@@ -11,12 +11,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" component={<Home/>} />
-        <Route path="/Register" component={<Register/>} />
-        <Route path="/Login" component={<Login/>} />
-        <Route path="/Habitaciones" component={<Habitaciones/>} />
-        <Route path="/Contactanos" component={<Contactanos/>} />
-        <Route path="*" component={<Error404/>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/Register" element={<Register/>} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/Habitaciones" element={<Habitaciones/>} />
+        <Route path="/Contactanos" element={<Contactanos/>} />
+        <Route path="*" element={<Error404/>} />
       </Routes>
     </Router>
 
