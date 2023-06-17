@@ -1,6 +1,7 @@
 import LoginForm from "../LoginForm";
 import Footer from "../footer/Footer";
-import Navbar from "../navbar/Navbar";
+import Navbar from "../header/Navbar";
+import { BrowserRouter } from 'react-router-dom';
 
 function Login() {
   return (

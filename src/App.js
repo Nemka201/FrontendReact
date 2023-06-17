@@ -7,6 +7,7 @@ import Habitaciones from './components/Vistas/Habitaciones';
 import Contactanos from './components/Vistas/Contactanos';
 import Error404 from './components/Vistas/Error404';
 
+
 function App() {
   return (
     <Router>
