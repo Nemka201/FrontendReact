@@ -3,13 +3,22 @@ import React, { useState } from 'react';
 function RegisterForm() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [name, setName] = useState('');
+  const [year, setAge] = useState('');
+
+
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
   };
-
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
+  };
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };  
+  const handleAgeChange = (event) => {
+    setAge(event.target.value);
   };
 
   const handleSubmit = (event) => {
@@ -41,6 +50,15 @@ function RegisterForm() {
           id="password"
           value={password}
           onChange={handlePasswordChange}
+        />
+      </div>
+      <div>
+        <label htmlFor="name">Nombre Completo:</label>
+        <input
+          type="text"
+          id="name"
+          value={name}
+          onChange={handleNameChange}
         />
       </div>
       <button type="submit">Registrar</button>

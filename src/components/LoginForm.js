@@ -24,6 +24,7 @@ function LoginForm() {
 
   return (
     <form onSubmit={handleSubmit}>
+      
       <h2>Iniciar sesión</h2>
       <div>
         <label htmlFor="username">Usuario:</label>
