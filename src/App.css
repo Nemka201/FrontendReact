@@ -5,10 +5,15 @@
     --color-violetaC: #9575DE;
 
 }
+
 footer{
     background-color: var(--color-rosa);
     color: whitesmoke;
     text-align: center;
+}
+
+.container-fluid{
+    margin-top: 1110;
 }
 
 .navbar{
@@ -32,5 +37,10 @@ footer{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:whitesmoke;
     text-align: center;
+}
+
+#carouselExample{
+    display: flex;
+    width: 500px;
 }
 
