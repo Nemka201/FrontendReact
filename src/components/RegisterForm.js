@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 
 function RegisterForm() {
+  const navigate = useNavigate();
+
+  // Inicia los string vacios
+
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
   const [year, setYear] = useState('');
   const [gender, setGender] = useState('');
-  const [tamaño, setTamaño] = useState('');
 
+  // Actualiza valor estado con valor actual
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -25,25 +31,24 @@ function RegisterForm() {
   const handleGenderChange = (event) => {
     setGender(event.target.value);
   };
-  const handleTamañoChange = (event) => {
-    setTamaño(event.target.value);
-  };
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
     // Realizar la lógica para enviar los datos del formulario
+
     console.log('Username:', username);
     console.log('Password:', password);
+
     // Restablecer los valores del formulario
     setUsername('');
     setPassword('');
     setName('');
     setYear('');
     setGender('');
-    setTamaño('');
 
     // Realiza una solicitud a la API utilizando Axios
-    axios.post('URL_DE_LA_API', {
+    axios.post('http://localhost:3030/Api/Register', {
       username: username,
       password: password,
       name: name,
@@ -51,16 +56,20 @@ function RegisterForm() {
       gender:gender
     })
     .then(response => {
+      const {user, message} = response.data;
     // Maneja la respuesta exitosa de la API
-      console.log(response.data);
+      console.log(message);
+      console.log(user);
+    // Establecer un valor en la sesión
+      sessionStorage.setItem('session', JSON.stringify(user));
+      navigate('/');
+
     })
     .catch(error => {
     // Maneja el error de la API
       console.error(error);
     });
-    
-    // Establecer un valor en la sesión
-      sessionStorage.setUser('clave', 'valor');
+
   };
 
   return (
@@ -135,17 +144,6 @@ function RegisterForm() {
         Otro
       </label>
       </div>
-      {(gender==='male')&&<div className="tamaño">
-      <div>
-        <label htmlFor="username">Longitud del pene:</label>
-        <input
-          type="number"
-          id="tamaño"
-          value={tamaño}
-          onChange={handleTamañoChange}
-        />
-      </div>
-      </div>}
       <button type="submit">Registrar</button>
     </form>
   );

@@ -5,6 +5,9 @@
     --color-violetaC: #9575DE;
 
 }
+.body{
+    background-color: var(--color-negro);
+}
 footer{
     background-color: var(--color-rosa);
     color: whitesmoke;
@@ -26,7 +29,12 @@ footer{
     color: whitesmoke;
     border-radius: 20px;
     margin-left: 280px;
-
+}
+#logout{
+    background-color: var(--color-violetaC) ;
+    color: whitesmoke;
+    border-radius: 20px;
+    margin-left: 280px;
 }
 .Title{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
