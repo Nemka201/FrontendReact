@@ -3,15 +3,17 @@
     --color-negro: #2B2730;
     --color-violeta: #6554AF;
     --color-violetaC: #9575DE;
+    --color-blanco: #F8F8F8;
 
 }
+
 .body{
     background-color: var(--color-negro);
 }
 
 footer{
     background-color: var(--color-rosa);
-    color: whitesmoke;
+    color: var(--color-blanco);
     text-align: center;
 }
 
@@ -25,16 +27,21 @@ footer{
 }
 #login{
     background-color: var(--color-violetaC) ;
-    color: whitesmoke;
+    color: var(--color-blanco);
     border-radius: 20px;
     margin-left: 355px;
 }
-#register{
+#register, #logout{
     background-color: var(--color-violetaC) ;
-    color: whitesmoke;
+    color: var(--color-blanco);
     border-radius: 20px;
     margin-left: 280px;
 
+}
+#loginButton, registerButton{
+    background-color: var(--color-violetaC) ;
+    color: var(--color-blanco);
+    border-radius: 20px;
 }
 .Title{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -45,5 +52,25 @@ footer{
 #carouselExample{
     display: flex;
     width: 500px;
+}
+/* Forms */
+
+.forms{
+    background-color: var(--color-rosa);
+    color: var(--color-blanco);
+    width: 768px;
+    height: 768px;
+    padding: 5%;
+    border-radius: 70px;
+    margin-left:20%;
+    text-align: center;
+    justify-content: center;
+    
+}
+.forms h2{
+    font-size: 3rem;
+}
+.forms p{
+    font-size: 2rem;
 }
 

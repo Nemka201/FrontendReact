@@ -4,11 +4,11 @@ import Footer from "../footer/Footer";
 
 function Home() {
   return (
-    <div className="Home">
+    <>
       <Header/>
       <Content/>
       <Footer/>
-    </div>
+    </>
   );
 }
 

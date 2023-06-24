@@ -3,10 +3,10 @@ import Footer from "../footer/Footer";
 
 function Habitaciones() {
   return (
-    <div className="Habitaciones">
+    <>
       <Header/>
       <Footer/>
-    </div>
+    </>
 
   );
 }

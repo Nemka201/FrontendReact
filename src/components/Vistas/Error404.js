@@ -4,11 +4,11 @@ import Footer from "../footer/Footer";
 
 function Error404() {
   return (
-    <div className="Error404">
+    <>
       <Header/>
       <Content/>
       <Footer/>
-    </div>
+    </>
 
   );
 }

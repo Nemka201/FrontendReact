@@ -5,11 +5,11 @@ import { BrowserRouter } from 'react-router-dom';
 
 function Login() {
   return (
-    <div className="Login">
+    <>
       <Navbar/>
       <LoginForm/>
       <Footer/>
-    </div>
+    </>
   );
 }
 

@@ -48,7 +48,7 @@ function LoginForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='forms'>
       
       <h2>Iniciar sesión</h2>
       <div>
@@ -69,7 +69,7 @@ function LoginForm() {
           onChange={handlePasswordChange}
         />
       </div>
-      <button type="submit">Iniciar sesión</button>
+      <button type="submit" id="loginButton">Iniciar sesión</button>
     </form>
   );
 }

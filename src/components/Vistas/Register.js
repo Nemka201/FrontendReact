@@ -4,11 +4,11 @@ import Navbar from "../header/Navbar";
 
 function Register() {
   return (
-    <div className="Register">
+    <>
       <Navbar/>
       <RegisterForm/>
       <Footer/>
-    </div>
+    </>
   );
 }
 
