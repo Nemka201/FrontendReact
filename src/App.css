@@ -3,7 +3,6 @@
     --color-negro: #2B2730;
     --color-violeta: #6554AF;
     --color-violetaC: #9575DE;
-
 }
 .body{
     background-color: var(--color-negro);
@@ -13,10 +12,6 @@ footer{
     background-color: var(--color-rosa);
     color: whitesmoke;
     text-align: center;
-}
-
-.container-fluid{
-    margin-top: 1110;
 }
 
 .navbar{
