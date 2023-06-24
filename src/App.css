@@ -4,7 +4,6 @@
     --color-violeta: #6554AF;
     --color-violetaC: #9575DE;
     --color-blanco: #F8F8F8;
-
 }
 
 .body{
@@ -15,10 +14,6 @@ footer{
     background-color: var(--color-rosa);
     color: var(--color-blanco);
     text-align: center;
-}
-
-.container-fluid{
-    margin-top: 1110;
 }
 
 .navbar{
