@@ -22,8 +22,11 @@ function Navbar() {
   return (
   <nav className="navbar border-bottom border-bottom-dark">
     <div className="container">
-        <div className="col-xl-9 col-sm-8 col-lg-9">
-         <Link to="/"> <h1 className="Title" LinkTo>Prive</h1> </Link>
+        <div className="col-xl-9 col-sm-8 col-lg-9 flex">
+         <Link to="/" className='custom-link'> <h1 className="Title" LinkTo>Prive</h1> </Link>
+         <Link to="/Habitaciones" className='custom-link'> <h1 className="habitaciones" LinkTo>Habitaciones</h1> </Link>
+         <Link to="/Habitaciones" className='custom-link'> <h1 className="habitaciones" LinkTo>Contactanos</h1> </Link>
+
           </div>
         {!isLogged &&
         <>
@@ -35,7 +38,7 @@ function Navbar() {
           </div>
         </>}
         {isLogged && <>
-        <h2>{userLogged.name}</h2>
+          <Link to="/Usuario"><h2 className='userName'>{userLogged.name}</h2></Link>
           <div className="col-xl-1 col-sm-1 col-lg-1">
             <button className="btn btn-outline-danger me-2" id="logout" onClick={handleButtonClickLogout} type="button">Logout</button>
           </div>

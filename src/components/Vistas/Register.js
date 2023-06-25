@@ -6,7 +6,15 @@ function Register() {
   return (
     <>
       <Navbar/>
-      <RegisterForm/>
+      <div className="container-fluid body">
+        <div className="row">
+          <div className="col-3"></div>
+          <div className="col-6">
+            <RegisterForm/>
+          </div>
+          <div className="col-3"></div>
+        </div>
+      </div>
       <Footer/>
     </>
   );
