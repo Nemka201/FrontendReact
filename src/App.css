@@ -5,36 +5,43 @@
     --color-violetaC: #9575DE;
     --color-blanco: #F8F8F8;
 }
-h1, h2, h3,p{
+
+h1,
+h2,
+h3,
+p {
     font-family: 'Ysabeau SC', sans-serif;
 }
-.userName{
+
+.userName {
     color: var(--color-blanco);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 1.7em;
     position: relative;
-    left:9.5em;
-    top:0.11em;
+    left: 9.5em;
+    top: 0.11em;
 }
-.body{
+
+.body {
     background-color: var(--color-negro);
     height: 848px;
     position: sticky;
 }
 
-footer{
+footer {
     background-color: var(--color-rosa);
     color: var(--color-blanco);
-    text-align: center;    
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.navbar{
+.navbar {
     background-color: var(--color-rosa);
     color: var(--color-negro);
 }
-#login{
-    background-color: var(--color-violetaC) ;
+
+#login {
+    background-color: var(--color-violetaC);
     color: var(--color-blanco);
     border-radius: 20px;
     margin-left: 310px;
@@ -45,8 +52,10 @@ footer{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease;
 }
-#register, #logout{
-    background-color: var(--color-violetaC) ;
+
+#register,
+#logout {
+    background-color: var(--color-violetaC);
     color: var(--color-blanco);
     border-radius: 20px;
     margin-left: 250px;
@@ -59,12 +68,15 @@ footer{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
-#logout:hover{
+
+#logout:hover {
     transition: all 0.5s ease;
-    background-color: var(--color-violeta) ;
+    background-color: var(--color-violeta);
 }
-#loginButton, #registerButton{
-    background-color: var(--color-violetaC) ;
+
+#loginButton,
+#registerButton {
+    background-color: var(--color-violetaC);
     color: var(--color-blanco);
     border-radius: 20px;
     padding: 5px;
@@ -72,16 +84,17 @@ footer{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
-.Title{
+
+.Title {
     font-family: 'Ysabeau SC', sans-serif;
-    color:var(--color-blanco);
+    color: var(--color-blanco);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     display: inline-block;
     transition: all 0.5s ease;
 
 }
 
-.Title:hover{
+.Title:hover {
     font-family: 'Ysabeau SC', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     display: inline-block;
@@ -91,7 +104,8 @@ footer{
     position: relative;
     transition: all 0.5s ease;
 }
-.title{
+
+.title {
     font-family: 'Ysabeau SC', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     display: inline-block;
@@ -103,50 +117,59 @@ footer{
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 
 }
-.habitaciones:hover{
+
+.habitaciones:hover {
     font-family: 'Ysabeau SC', sans-serif;
-    font-size:1.81em;
+    font-size: 1.81em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     display: inline-block;
     position: relative;
-    left:20%;
-    top:6.5px;
+    left: 20%;
+    top: 6.5px;
     transition: all 0.5s ease;
-    color: var(--color-violeta) ;
+    color: var(--color-violeta);
 }
-.habitaciones{
+
+.habitaciones {
     font-family: 'Ysabeau SC', sans-serif;
-    font-size:1.8em;
-    color:var(--color-blanco);
+    font-size: 1.8em;
+    color: var(--color-blanco);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     display: inline-block;
     position: relative;
-    left:20%;
-    top:10px;
+    left: 20%;
+    top: 10px;
     transition: all 0.5s ease;
     margin-right: 1em;
 }
 
 
-.flex{
-    display: flex; 
+.flex {
+    display: flex;
 }
 
-#carouselExample{
+#carouselExample {
     display: flex;
     width: 500px;
 }
+
 a {
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit; /* Utiliza el color heredado */
-  }
-a:link{
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit; /* Utiliza el color heredado */
-  }
+    text-decoration: none;
+    /* Quita el subrayado */
+    color: inherit;
+    /* Utiliza el color heredado */
+}
+
+a:link {
+    text-decoration: none;
+    /* Quita el subrayado */
+    color: inherit;
+    /* Utiliza el color heredado */
+}
+
 /* Forms */
 
-.forms{
+.forms {
     margin-top: 10%;
     background-color: var(--color-rosa);
     color: var(--color-blanco);
@@ -162,11 +185,13 @@ a:link{
     height: 600px;
     padding-top: 5%;
 }
-.forms h2{
-    font-size:5em;
+
+.forms h2 {
+    font-size: 5em;
     padding-bottom: 4%;
 }
-.forms input{
+
+.forms input {
     padding: 5px;
     margin: 5px;
     border-radius: 15px;
@@ -174,20 +199,21 @@ a:link{
     font-size: 2em;
     display: block;
     align-self: center;
-    margin-left:29%;
+    margin-left: 29%;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 
 }
-.forms label{
+
+.forms label {
     font-family: 'Ysabeau SC', sans-serif;
     font-size: 2em;
     display: block;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
-    
+
 }
 
-.forms button{
+.forms button {
     margin-top: 7%;
     font-size: 1.5em;
     font-family: 'Ysabeau SC', sans-serif;
@@ -198,11 +224,13 @@ a:link{
 
 
 }
+
 input:focus {
     border-color: var(--color-violeta);
 }
-.forms button:hover{
-    background-color:var(--color-negro) ;
+
+.forms button:hover {
+    background-color: var(--color-negro);
     color: var(--color-blanco);
     border-radius: 20px;
     padding: 5px;
@@ -210,7 +238,7 @@ input:focus {
 
 /* Register */
 
-.register{
+.register {
     margin-top: 2%;
     background-color: var(--color-rosa);
     color: var(--color-blanco);
@@ -229,36 +257,40 @@ input:focus {
     scrollbar-width: thin;
     scrollbar-color: var(--color-negro) var(--color-rosa);
 }
+
 .register::-webkit-scrollbar {
     width: 8px;
     border-radius: 100px;
 
 }
-  
+
 .register::-webkit-scrollbar-track {
     background-color: #f0f0f0;
     border-radius: 20px;
 
 }
-  
+
 .register::-webkit-scrollbar-thumb {
     background-color: #333333;
     border-radius: 20px;
     height: 50px;
 }
+
 .container::-ms-scrollbar {
     width: 8px;
     right: 100px;
     position: relative;
     height: 600px;
-  }
-.register h2{
-    font-size:3em;
+}
+
+.register h2 {
+    font-size: 3em;
     padding-bottom: 3%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
-.register input{
+
+.register input {
     padding: 5px;
     margin: 5px;
     border-radius: 15px;
@@ -266,22 +298,27 @@ input:focus {
     font-size: 1.2em;
     display: block;
     align-self: center;
-    margin-left:25%;
+    margin-left: 25%;
     padding-left: 5px;
     width: 450px;
     text-align: center;
     box-shadow: none;
 }
-.register input[type=text],.register input[type=password],.register input[type=date]{
+
+.register input[type=text],
+.register input[type=password],
+.register input[type=date] {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 
 }
-.register h2{
+
+.register h2 {
     color: var(--color-violeta);
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 
 }
-.register label{
+
+.register label {
     font-family: 'Ysabeau SC', sans-serif;
     font-size: 1.4em;
     display: block;
@@ -290,7 +327,7 @@ input:focus {
 
 }
 
-.register button{
+.register button {
     margin-top: -30px;
     font-size: 1.5em;
     font-family: 'Ysabeau SC', sans-serif;
@@ -301,33 +338,83 @@ input:focus {
 
 
 }
-.text-radio-input{
+
+.text-radio-input {
     position: relative;
     bottom: 1.35em;
     right: 3em;
 }
-#year{
+
+#year {
     padding: 8px;
     text-align: center;
 }
-button{
+
+button {
     transition: all 0.5s ease;
 
 }
-#register:hover, #login:hover, #registerButton:hover, #loginButton:hover{
+
+#register:hover,
+#login:hover,
+#registerButton:hover,
+#loginButton:hover {
     transition: all 0.5s ease;
-    background-color: var(--color-violeta) ;
+    background-color: var(--color-violeta);
     transform: scale(1.0);
 }
+
 .register:focus {
     border-color: var(--color-violeta);
     box-shadow: 0 0 5px var(--color-violeta);
 }
-.error{
-    font-family: 'Ysabeau SC', sans-serif;
-    color:var(--color-negro);
-    text-shadow: 0 0 5px var(--color-blanco);
 
+.error {
+    font-family: 'Ysabeau SC', sans-serif;
+    color: var(--color-negro);
+    text-shadow: 0 0 5px var(--color-blanco);
 }
 
+.titulo-contactanos {
+    color: var(--color-blanco);
+    margin-top: -100px;
+}
 
+.padre{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.contact-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+        "phone"
+        "facebook";
+    background-color: var(--color-violeta);
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    margin-top: -300px;
+}
+
+.phone {
+    grid-area: phone;
+    margin: auto;
+    width: fit-content;
+    height: max-content;
+}
+
+.facebook-link {
+    grid-area: facebook;
+    margin: auto;
+    width: fit-content;
+    height: max-content;
+}
+
+.contact-card>* {
+    background-color: #f2f2f2;
+    padding: 10px;
+}

@@ -5,6 +5,9 @@ function Habitaciones() {
   return (
     <>
       <Header/>
+        <div className="container-fluid body">
+        
+        </div>
       <Footer/>
     </>
 

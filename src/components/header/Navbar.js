@@ -25,7 +25,7 @@ function Navbar() {
         <div className="col-xl-9 col-sm-8 col-lg-9 flex">
          <Link to="/" className='custom-link'> <h1 className="Title" LinkTo>Prive</h1> </Link>
          <Link to="/Habitaciones" className='custom-link'> <h1 className="habitaciones" LinkTo>Habitaciones</h1> </Link>
-         <Link to="/Habitaciones" className='custom-link'> <h1 className="habitaciones" LinkTo>Contactanos</h1> </Link>
+         <Link to="/Contactanos" className='custom-link'> <h1 className="habitaciones" LinkTo>Contactanos</h1> </Link>
 
           </div>
         {!isLogged &&
