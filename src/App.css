@@ -476,6 +476,39 @@ button {
 
 }
 
-.text-white{
-    color:var(--color-blanco);
+.text-white {
+    color: var(--color-blanco);
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-content: space-around;
+    margin-left: 300px;
+    padding-top: 100px;
+    border: #2B2730 3px solid;
+}
+
+.card {
+    border-radius: .4rem !important;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in-out .7s;
+    cursor: pointer;
+    border-color: var(--color-negro);
+
+
+}
+
+.card-body {
+    background-color: var(--color-rosa);
+    border-color: var(--color-negro);
+}
+
+.btn-primary{
+    color: brown;
+    width: 200px;
+
 }

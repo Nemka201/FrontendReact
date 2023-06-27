@@ -14,7 +14,7 @@ function Content() {
           <div className="col-8">
             <section>
               <div className="contenedor-slide">
-                <Slide />
+                <Slide/>
               </div>
             </section>
           </div>
