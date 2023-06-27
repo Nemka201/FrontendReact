@@ -92,6 +92,7 @@ footer {
     display: inline-block;
     transition: all 0.5s ease;
 }
+
 .main-text {
     font-family: 'Ysabeau SC', sans-serif;
     color: var(--color-blanco);
@@ -104,15 +105,17 @@ footer {
 
 @keyframes changeShadowColor {
     0% {
-      text-shadow: 25px 25px 25px var(--color-rosa);
+        text-shadow: 25px 25px 25px var(--color-rosa);
     }
+
     50% {
-      text-shadow: 25px 25px 25px var(--color-violeta);
+        text-shadow: 25px 25px 25px var(--color-violeta);
     }
+
     100% {
-      text-shadow: 25px 25px 25px var(--color-violetaC);
+        text-shadow: 25px 25px 25px var(--color-violetaC);
     }
-  }
+}
 
 .Title:hover {
     font-family: 'Ysabeau SC', sans-serif;
@@ -399,7 +402,7 @@ button {
     margin-top: -100px;
 }
 
-.padre{
+.padre {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -437,7 +440,8 @@ button {
     background-color: #f2f2f2;
     padding: 10px;
 }
-.contenedor-slide{
+
+.contenedor-slide {
     position: relative;
     overflow: hidden;
     height: 500px;
@@ -445,24 +449,33 @@ button {
     transition: all 3 ease;
     animation: changeShadowColor2 5s infinite alternate;
 }
+
 @keyframes changeShadowColor2 {
     0% {
-      box-shadow: 2px 2px 3px red;
+        box-shadow: 2px 2px 3px red;
     }
+
     50% {
-      box-shadow: 2px 2px 20px black;
+        box-shadow: 2px 2px 20px black;
     }
+
     100% {
-      box-shadow: 2px 2px 20px darkblue;
+        box-shadow: 2px 2px 20px darkblue;
     }
-  }
+}
+
 .carousel-item img {
-    width: 500px; 
+    width: 500px;
     height: 500px;
     object-fit: cover;
 }
+
 .card img {
     height: 300px;
     object-fit: cover;
-    
-  }
+
+}
+
+.text-white{
+    color:var(--color-blanco);
+}

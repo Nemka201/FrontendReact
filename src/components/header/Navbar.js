@@ -38,7 +38,7 @@ function Navbar() {
           </div>
         </>}
         {isLogged && <>
-          <Link to="/Usuario"><h2 className='userName'>{userLogged.name}</h2></Link>
+          <Link to="/Usuario"><h2 className='userName' LinkTo>{userLogged.name}</h2></Link>
           <div className="col-xl-1 col-sm-1 col-lg-1">
             <button className="btn btn-outline-danger me-2" id="logout" onClick={handleButtonClickLogout} type="button">Logout</button>
           </div>

@@ -1,23 +1,9 @@
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import Card from "../content/Card"
-const axios = require('axios');
 
 function Habitaciones() {
-  let data;
-  const getAppExchangeRates = async () => {
-    try {
-      const response = await axios.get('https://openexchangerates.org/api/latest.json', {
-        params: {
-          app_id: '55b98ffe00f4417188058a0c5e06fedb'
-        }
-      });
-      console.log(response.data);
-      // Resto de tu código
-    } catch (error) {
-      console.error(error);
-    }
-  };
+
   return (
     <>
       <Header />

@@ -6,7 +6,7 @@ import Login from "./components/Vistas/Login";
 import Habitaciones from './components/Vistas/Habitaciones';
 import Contactanos from './components/Vistas/Contactanos';
 import Error404 from './components/Vistas/Error404';
-
+import Usuario from './components/Vistas/Usuario';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Route path="/Login" element={<Login/>} />
         <Route path="/Habitaciones" element={<Habitaciones/>} />
         <Route path="/Contactanos" element={<Contactanos/>} />
+        <Route path="/Usuario" element={<Usuario/>} />
         <Route path="*" element={<Error404/>} />
       </Routes>
     </Router>
