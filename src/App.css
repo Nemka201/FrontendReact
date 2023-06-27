@@ -91,8 +91,28 @@ footer {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     display: inline-block;
     transition: all 0.5s ease;
-
 }
+.main-text {
+    font-family: 'Ysabeau SC', sans-serif;
+    color: var(--color-blanco);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    display: inline-block;
+    text-shadow: 25px 25px 25px var(--color-rosa);
+    transition: all 1ms ease;
+    animation: changeShadowColor 10s infinite alternate;
+}
+
+@keyframes changeShadowColor {
+    0% {
+      text-shadow: 25px 25px 25px var(--color-rosa);
+    }
+    50% {
+      text-shadow: 25px 25px 25px var(--color-violeta);
+    }
+    100% {
+      text-shadow: 25px 25px 25px var(--color-violetaC);
+    }
+  }
 
 .Title:hover {
     font-family: 'Ysabeau SC', sans-serif;
@@ -149,8 +169,9 @@ footer {
 }
 
 #carouselExample {
-    display: flex;
+    /* display: flex; */
     width: 500px;
+
 }
 
 a {
@@ -221,8 +242,6 @@ a:link {
     align-self: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease;
-
-
 }
 
 input:focus {
@@ -418,3 +437,32 @@ button {
     background-color: #f2f2f2;
     padding: 10px;
 }
+.contenedor-slide{
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+    transition: all 3 ease;
+    animation: changeShadowColor2 5s infinite alternate;
+}
+@keyframes changeShadowColor2 {
+    0% {
+      box-shadow: 2px 2px 3px red;
+    }
+    50% {
+      box-shadow: 2px 2px 20px black;
+    }
+    100% {
+      box-shadow: 2px 2px 20px darkblue;
+    }
+  }
+.carousel-item img {
+    width: 500px; 
+    height: 500px;
+    object-fit: cover;
+}
+.card img {
+    height: 300px;
+    object-fit: cover;
+    
+  }
